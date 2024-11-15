@@ -1,0 +1,44 @@
+REGISTRY = {}
+
+from .n_transf_agent import TransformerAgent
+from .n_transf_agent_task_cross import TransformerAgent as TransformerAgentTaskCross
+from .n_transf_agent_multi_head import TransformerAgent as TransformerAgentMultiHead
+from .n_transf_agent_me import TransformerAgent as TransformerAgentMe
+
+from .n_agent_me import CareAgent as CareAgent
+
+from .n_transf_agent_task_cross_v1 import TransformerAgent as TransformerAgentTaskCrossV1
+from .n_transf_agent_task_cross_v2 import TransformerAgent as TransformerAgentTaskCrossV2
+from .n_transf_agent_task_cross_v3 import TransformerAgent as TransformerAgentTaskCrossV3
+from .n_transf_agent_task_cross_use import TransformerAgent as TransformerAgentTaskCrossUse
+from .n_transf_agent_task_cross_use_v1 import TransformerAgent as TransformerAgentTaskCrossUseV1
+from .n_transf_agent_task_cross_v2_paco import TransformerAgent as TransformerAgentTaskCrossV2Paco
+from .n_transf_agent_task_cross_v2_le import TransformerAgent as TransformerAgentTaskCrossV2LE
+from .n_transf_agent_task_cross_v2_tc import TransformerAgent as TransformerAgentTaskCrossV2TC
+from .n_transf_agent_task_cross_use_v1_plm import TransformerAgent as TransformerAgentTaskCrossUseV1PLM
+from .n_transf_agent_task_cross_v1_without_first_cab import TransformerAgent as TransformerAgentTaskCrossV1WithoutFirstCab
+from .n_transf_agent_task_cross_v1_without_second_cab import TransformerAgent as TransformerAgentTaskCrossV1WithoutSecondCab
+from .n_transf_agent_task_cross_v1_without_sab import TransformerAgent as TransformerAgentTaskCrossV1WithoutSab
+from .comix_agent import CEMRecurrentAgent
+
+
+REGISTRY["n_transf"] = TransformerAgent
+REGISTRY["n_transf_task_cross"] = TransformerAgentTaskCross
+REGISTRY["n_transf_multi_head"] = TransformerAgentMultiHead
+REGISTRY["n_transf_me"] = TransformerAgentMe
+
+REGISTRY["n_agent_care"] = CareAgent
+
+REGISTRY["n_transf_task_cross_v1"] = TransformerAgentTaskCrossV1
+REGISTRY["n_transf_task_cross_v2"] = TransformerAgentTaskCrossV2
+REGISTRY["n_transf_task_cross_v3"] = TransformerAgentTaskCrossV3
+REGISTRY["n_transf_task_cross_use"] = TransformerAgentTaskCrossUse
+REGISTRY["n_transf_task_cross_use_v1"] = TransformerAgentTaskCrossUseV1
+REGISTRY["n_transf_task_cross_v2_paco"] = TransformerAgentTaskCrossV2Paco
+REGISTRY["n_transf_task_cross_v2_le"] = TransformerAgentTaskCrossV2LE
+REGISTRY["n_transf_task_cross_v2_tc"] = TransformerAgentTaskCrossV2TC
+REGISTRY["n_transf_task_cross_use_v1_plm"] = TransformerAgentTaskCrossUseV1PLM
+REGISTRY["n_transf_task_cross_v1_without_first_cab"] = TransformerAgentTaskCrossV1WithoutFirstCab
+REGISTRY["n_transf_task_cross_v1_without_second_cab"] = TransformerAgentTaskCrossV1WithoutSecondCab
+REGISTRY["n_transf_task_cross_v1_without_sab"] = TransformerAgentTaskCrossV1WithoutSab
+REGISTRY["comix_agent"] = CEMRecurrentAgent

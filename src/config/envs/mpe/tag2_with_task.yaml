@@ -1,0 +1,23 @@
+env: "mpe"
+
+env_args:
+  key: tag2_with_task
+  time_limit: 25
+
+standardise_returns: False
+standardise_rewards: False
+
+#logs
+save_animation: False
+use_tensorboard: True
+local_results_path: "results"
+test_greedy: True
+test_nepisode: 30
+test_interval: 10000
+log_interval: 10000
+animation_interval: 10000
+animation_interval_evaluation: 100 # only for evaluate mode
+runner_log_interval: 10000
+learner_log_interval: 10000
+save_model_interval: 500000
+t_max: 550000
