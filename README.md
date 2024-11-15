@@ -20,7 +20,9 @@ pip install gym==0.25.1
 ## 工具
 
 Xvfb :10 -screen 0 1024x768x16 &
+
 export DISPLAY=:10
+
 pkill -9 Xvfb
 
 ## 实验脚本
